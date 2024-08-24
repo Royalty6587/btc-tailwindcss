@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgc: '#26759e',
+                        bgcol: '#0f1a2e',
+                        bgstle: 'red',
+                        bgclock: 'black',
+                        bgst: 'white',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="don.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<div class="media text-white font-bold text-2xl lg:invisible md:invisible visible  absolute  mt-24 bg-bgc h-full  text-center"
+    id="gon">
+    <ul class=" gap-6 grid pt-6">
+        <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li>
+            <a href="About.html"><i class="fa-solid fa-address-card"></i> About</a>
+        </li>
+
+        <li>
+            <a href="form.html"><i class="fa-brands fa-servicestack"></i> Service</a>
+        </li>
+
+        <li>
+            <a href="#"> <i class="fa-brands fa-blogger"></i> Blog</a>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa-solid fa-caret-down"></i> More</a>
+        </li>
+    </ul>
+</div>
+
+<body class="bg-bgcol">
+
+    <nav
+        class="shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex lg:gap-44 items-center bg-bgc w-full h-20 md:gap-11 text-center">
+
+        <div class="logo text-white font-bold lg:text-4xl md:text-3xl text-2xl pl-4">
+            <h1>Genesis</h1>
+        </div>
+
+        <ul class="text-white flex lg:gap-6 md:gap-6 invisible lg:visible md:visible">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="About.html">About</a>
+            </li>
+
+            <li>
+                <a href="#">Service</a>
+            </li>
+
+            <li>
+                <a href="#">Blog</a>
+            </li>
+
+            <li>
+                <a href="#">More</a>
+            </li>
+        </ul>
+        <!-- <div class="end text-white invisible lg:visible md:visible items-center">
+            <div class="trx">
+                <i>
+                    <a href="form.html">Trade Here</a>
+                </i>
+            </div>
+        </div> -->
+        <div class="icon text-white lg:invisible md:invisible visible ">
+            <span class="material-icons" onclick="slide1()">
+                menu
+            </span>
+        </div>
+    </nav>
+
+
+    <h1 class="text-3xl font-bold text-bgst justify-center text-center">WELCOME TO GENESIS TRADE, FILL UP LET'S TRADE.</h1>
+    <div class="form justify-center text-center items-center bg-bgcol text-bgst lg:w-[50%] md:w-[50%] w-[100%] h-[30rem] lg:ml-[20rem] md:ml-44  p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded mt-6 bg-bgcol">
+        <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/movajlvj"
+            method="post">
+            <fieldset id="fs-frm-inputs" class="gap-11 pt-6">
+                <label for="full-name" class="w-44 font-bold text-xl">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required=""
+                    class="w-full p-2 rounded-2xl mt-4 text-black">
+                <label for="full-name" class="w-44 font-bold text-xl">Buy or Sell</label>
+                <input type="text" name="name" id="full-name" placeholder="buy or sell" required=""
+                    class="w-full p-2 rounded-2xl mt-4 text-black">
+                <label for="full-name" class="w-44 font-bold text-xl">which crypto coin are you buying or selling</label>
+                <input type="text" name="name" id="full-name" placeholder="what are you buying or selling" required=""
+                    class="w-full p-2 rounded-2xl mt-4 text-black">
+                <label for="full-name" class="w-44 font-bold text-xl">How much you want?</label>
+                <input type="text" name="name" id="full-name" placeholder="How much you want to sell or buy" required=""
+                    class="w-full p-2 rounded-2xl mt-4 text-black">
+                <label for="email-address" class="font-bold text-xl">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""
+                    class="w-full p-2 rounded-2xl mt-4 text-black">
+                <label for="phone" class="font-bold text-xl">whatsapp_line</label>
+                <input type="text" name="phone number" placeholder="whatsapp num:" required=""
+                    class="w-full p-2 rounded-2xl mt-4 text-black">
+            </fieldset>
+
+            </fieldset>
+            <input type="submit" value="Submit_Trade" class="bg-bgc p-2 rounded-2xl mt-24 font-bold" onclick="
+            alert('Thanks for Trading with us, please kindly check your DM for our feedback');
+            " >
+        </form>
+    </div>
+    <script src="don.jsx"></script>
+    <script src="form.jsx"></script>
+</body>
+
+</html>

